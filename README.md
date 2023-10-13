@@ -10,6 +10,8 @@ Machine learning (ML) has evolved from the mix of domains: Utilizing the statist
 
 ![Fig 1: A typical ML model life cycle implemented.](images/Picture_1.png)
 
+Fig 1: A typical ML model life cycle implemented.
+
 Until recently, the number of models were manageable for a small data. There was simply less interest in understanding these models and their dependencies at a company-wide level. But as organizations increasingly adopt machine learning to derive insights from the big data, and consequently automate the decision-making, models become more critical, and, in parallel, managing model risks becomes more important at the top level. Thus, the need for a structured approach to managing ML projects has become evident. MLOps was born out of this necessity.
 
 MLOps is heavily derived from the DevOps concept in software engineering. MLOps is the process of applying established best practices used in DevOps to the machine learning models, to design, build, deploy, monitor, and manage the models in production. In short, think of MLOps as the process of automating machine learning using DevOps methodologies .
@@ -50,6 +52,8 @@ Documentation and governance are essential for model transparency, accountabilit
 At the end of their lifecycle or when they no longer provide value, models need to be decommissioned. This phase involves retiring models, archiving data, and ensuring a clean exit from production systems.
 
 ![Fig  2: Typical MLOps life cycle implemented in the industry [1]](images/Picture_2.png)
+
+Fig  2: Typical MLOps life cycle implemented in the industry [1]
 
 
 ## 2. Integration of MLOps, DevOps, DataOps & ModelOps
@@ -111,6 +115,8 @@ ModelOps automation tools may include MLflow for model tracking and versioning, 
 Overall, MLOps cycle is culmination of building Machine learning models combined with well-established practices and tools of DataOps, DevOps and ModelOps, as shown in the fig 3. Model Development and Software Development are stitched together into unified Machine Learning Life Cycle.
 
 ![Fig 3:  MLOps life cycle](images/Picture_3.png)
+
+Fig 3:  MLOps life cycle
 
 ### CITATIONS
 [1] Introducing MLOps, by Mark Treveil, and the Dataiku Team
