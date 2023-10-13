@@ -8,7 +8,7 @@ Due to surge of implementing the machine learning models in solving business pro
 ## 1.1 Defining MLOps
 Machine learning (ML) has evolved from the mix of domains: Utilizing the statistics domain to alter, test, describe and infer the data to become useable, then implementing the mathematical  optimization theory to run different models to learn from the past data so it can predict the outcomes in future to a certain accuracy. With the advent of HPC and coding friendly interpreter language like Python, ML has become a transformative force in various industries, including finance, healthcare, marketing, and manufacturing. The Fig 1 displays the typical ML model life cycle [1]
 
-![Fig 1: A typical ML model life cycle implemented.](Picture_1.png)
+![Fig 1: A typical ML model life cycle implemented.](images/Picture_1.png)
 
 Until recently, the number of models were manageable for a small data. There was simply less interest in understanding these models and their dependencies at a company-wide level. But as organizations increasingly adopt machine learning to derive insights from the big data, and consequently automate the decision-making, models become more critical, and, in parallel, managing model risks becomes more important at the top level. Thus, the need for a structured approach to managing ML projects has become evident. MLOps was born out of this necessity.
 
@@ -49,7 +49,7 @@ Documentation and governance are essential for model transparency, accountabilit
 ### 10. Model Decommissioning
 At the end of their lifecycle or when they no longer provide value, models need to be decommissioned. This phase involves retiring models, archiving data, and ensuring a clean exit from production systems.
 
-![Fig  2: Typical MLOps life cycle implemented in the industry [1]](Picture_2.png)
+![Fig  2: Typical MLOps life cycle implemented in the industry [1]](images/Picture_2.png)
 
 
 ## 2. Integration of MLOps, DevOps, DataOps & ModelOps
@@ -110,7 +110,7 @@ ModelOps automation tools may include MLflow for model tracking and versioning, 
 
 Overall, MLOps cycle is culmination of building Machine learning models combined with well-established practices and tools of DataOps, DevOps and ModelOps, as shown in the fig 3. Model Development and Software Development are stitched together into unified Machine Learning Life Cycle.
 
-![Fig 3:  MLOps life cycle](Picture_3.png)
+![Fig 3:  MLOps life cycle](images/Picture_3.png)
 
 ### CITATIONS
 [1] Introducing MLOps, by Mark Treveil, and the Dataiku Team
