@@ -1,4 +1,3 @@
-# IISc-CCE-ML-AI-MLOps
 This repo contains all learning notes, resources and assignments completed in IISc CCE course on Applied AI-ML and MLOps
 
 # Understanding the basics of MLOps and Integration of MLOps, DevOps, DataOps and ModelOps
