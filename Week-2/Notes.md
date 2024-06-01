@@ -159,12 +159,41 @@ MLflow provides tools to manage and track machine learning experiments. Two of t
 
 **Production Setup with `mlflow server`**:
 1. Start the MLflow server:
-   ```bash
+   ```bash   ```bash
    mlflow server --backend-store-uri mysql+pymysql://user:password@host/dbname --default-artifact-root s3://my-bucket/mlflow-artifacts
    ```
 2. The server is now accessible to other users or systems. They can log experiments to this server and access the UI remotely.
 
 Choosing between `mlflow ui` and `mlflow server` depends on your specific needs. For quick local visualization and development, `mlflow ui` is sufficient. For robust, scalable, and collaborative environments, `mlflow server` is the appropriate choice. Both tools leverage the power of MLflow to track and manage machine learning experiments effectively.
+
+## Tags 
+Tags in MLflow are key-value pairs that you can associate with runs, experiments, or models to help organize and filter them. Tags can be used to store metadata such as the model type, data source, or any other custom information you find useful.
+
+```python
+with mlflow.start_run() as run:
+    # Log a parameter (key-value pair)
+    mlflow.log_param("param1", 5)
+    
+    # Log a metric (key-value pair)
+    mlflow.log_metric("metric1", 0.85)
+    
+    # Log a tag (key-value pair)
+    mlflow.set_tag("model_type", "RandomForest")
+    mlflow.set_tag("data_source", "synthetic_data")
+
+    # Optionally, you can also log a tag dictionary
+    tags = {"developer": "Alice", "version": "1.0", "env": "staging"}
+    mlflow.set_tags(tags)
+```
+### Retrieving Tags
+
+You can retrieve tags for a specific run using the mlflow.get_run method:
+```python
+run_id = 'your_run_id'
+run = mlflow.get_run(run_id)
+tags = run.data.tags
+print(tags)
+```
 
 ## ** Guide for Week-2 task step-by-step 
 
